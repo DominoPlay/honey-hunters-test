@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Honey Hunters test task">
+    <title>Honey Hunters</title>
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
+    <!--  Bootstrap 5 CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/honey-logo.svg" alt="Honey nav logo" width="175" height="72">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="honey-form" class="bg-dark text-light">
+            <div class="container h-100 py-3">
+                <div class="row text-center">
+                    <img class="honey-form-img" src="../img/honey-contact.svg" alt="Honey contact form img">
+                </div>
+                <div class="row my-5">
+                    <form id="form">
+                        <div class="d-flex flex-column flex-md-row align-items-start justify-content-center">
+                            <div class="col-12 col-md-6 px-4 px-md-0 pe-md-4">
+                                <div class="form-row">
+                                    <div class="form-group my-3">
+                                        <div class="my-label-wrapper">
+                                            <label for="name" class="control-label mb-2">Имя <span class="text-danger">*</span></label>
+                                        </div>
+                                        <input name="name" type="text" class="form-control form-control-lg" id="name" required autofocus/>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <div class="my-label-wrapper">
+                                            <label for="email" class="control-label mb-2">E-Mail <span class="text-danger">*</span></label>
+                                        </div>
+                                        <input name="email" type="text" class="form-control form-control-lg" id="email" required autofocus/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 px-4 px-md-0 ps-md-4">
+                                <div class="form-row">
+                                    <div class="form-group my-3">
+                                        <div class="my-label-wrapper">
+                                            <label for="comment" class="control-label mb-2">Комментарий <span class="text-danger">*</span></label>
+                                        </div>
+                                        <textarea name="comment" rows="4" maxlength="70" class="form-control form-control-lg" id="comment" required autofocus></textarea>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-md-end">
+                                    <button type="submit" class="btn btn-danger btn-lg mt-2" id="submit">Записать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="honey-comments" class="bg-light text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="h3 my-5 col text-center">Выводим комментарии</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-start flex-wrap">
+                    <!-- Comments div output -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="http://honey-hunters.ru"><img src="../img/honey-logo.svg" alt="Honey footer logo" width="150" height="48"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="https://vk.com/id368675475" style="margin-right: 40px;">
+                            <img class="footer-link" src="../img/honey-vk.svg" alt="vk">
+                        </a>
+                        <a href="https://www.facebook.com/honeyhuntersmanagement">
+                            <img class="footer-link" src="../img/honey-fb.svg" alt="fb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
